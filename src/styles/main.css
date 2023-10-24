@@ -149,6 +149,99 @@ header {
   }
 }
 
+/* Restaurant */
+/* Gaya dasar */
+.favorite-item {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.restaurant {
+  text-align: center;
+}
+
+.restaurant h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+#restaurant-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.restaurant-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Bayangan seperti kartu */
+}
+
+.restaurant-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.restaurant-item h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.restaurant-item p {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+}
+
+/* Optional: Animasi saat hover */
+.restaurant-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Responsif dan mengisi seluruh layar */
+@media (max-width: 768px) {
+  .favorite-item {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .restaurant {
+    text-align: center;
+  }
+
+  .restaurant h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  #restaurant-list {
+    grid-template-columns: repeat(1, 1fr);
+    /* Satu kolom pada layar kecil */
+    gap: 10px;
+  }
+
+  .restaurant-item {
+    border-radius: 0;
+    box-shadow: none;
+    /* Hapus bayangan pada layar kecil */
+    padding: 10px;
+  }
+}
+
 
 /* favorite */
 .favorite {
