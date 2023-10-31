@@ -1,3 +1,11 @@
+// Sidebar
+document.getElementsByClassName("toggler-navbar")[0].addEventListener("click", toogleClass);
+
+function toogleClass() {
+    document.getElementsByClassName("hamburger-menu")[0].classList.toggle('open')
+    document.getElementsByClassName("sidebar")[0].classList.toggle('open')
+}
+
 // Mendapatkan referensi ke elemen div yang akan menampilkan daftar restoran
 const restaurantList = document.getElementById("restaurant-list");
 
@@ -28,3 +36,4 @@ fetch("/src/public/data/DATA.json")
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+
